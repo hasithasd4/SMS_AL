@@ -1,0 +1,18 @@
+/// <summary>
+/// PageExtension ServicMgtSetup (ID 70103) extends Record Service Mgt. Setup.
+/// </summary>
+pageextension 70103 "Sales & Receivables Setup" extends "Sales & Receivables Setup"
+{
+    layout
+    {
+        addlast(General)
+        {
+            field("No of Days to send Message"; Rec."No of Days to send Message")
+            {
+                ApplicationArea = all;
+                ToolTip = 'Specifies the no of days to set for the posting date to send the message';
+
+            }
+        }
+    }
+}
